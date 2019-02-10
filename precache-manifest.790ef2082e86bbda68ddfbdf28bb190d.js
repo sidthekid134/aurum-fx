@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/aurum-fx/static/js/runtime~main.41327226.js"
   },
   {
-    "revision": "78b32fcb90ffbf785669",
-    "url": "/aurum-fx/static/js/main.78b32fcb.chunk.js"
+    "revision": "6e7d41079c6ee1e7d8c2",
+    "url": "/aurum-fx/static/js/main.6e7d4107.chunk.js"
   },
   {
     "revision": "13eeb2032981bf3107f9",
     "url": "/aurum-fx/static/js/1.13eeb203.chunk.js"
   },
   {
-    "revision": "78b32fcb90ffbf785669",
-    "url": "/aurum-fx/static/css/main.23dfe706.chunk.css"
+    "revision": "6e7d41079c6ee1e7d8c2",
+    "url": "/aurum-fx/static/css/main.0ab71425.chunk.css"
   },
   {
-    "revision": "b0ffacfd4b1d1d102819603a3adfc7a3",
+    "revision": "b63ce9375ada81a8d01930088ca5d343",
     "url": "/aurum-fx/index.html"
   }
 ];
