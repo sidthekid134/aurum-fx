@@ -44,16 +44,17 @@ jobs:
           name: Test Build
           command: yarn test
 
+      # Setup Git
       - run:
           name: Setup Git
           command: |
             git config --global user.email "octarine-bot@octarinegroup.com"
             git config --global user.name "OctarineBot"
+            git remote rm origin
+            git remote add origin https://octarine-bot:${GITHUB_TOKEN}@github.com/octarinegroup/aurum-fx.git
 
       # Deploy Static files!
       - run:
           name: yarn deploy
           command: |
-            git remote rm origin
-            git remote add origin https://octarine-bot:${GITHUB_TOKEN}@github.com/octarinegroup/aurum-fx.git
             yarn deploy
