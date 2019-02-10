@@ -54,8 +54,6 @@ jobs:
       - run:
           name: yarn deploy
           command: |
-            echo ${GITHUB_TOKEN}
-            ls -al
             git remote rm origin
-            git remote add origin https://sidthekid134:${GITHUB_TOKEN}@github.com/sidthekid134/aurum-fx.git
+            git remote add origin https://octarine-bot:${GITHUB_TOKEN}@github.com/octarinegroup/aurum-fx.git
             yarn deploy
