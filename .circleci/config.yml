@@ -56,5 +56,4 @@ jobs:
       # Deploy Static files!
       - run:
           name: yarn deploy
-          command: |
-            yarn deploy
+          command: yarn deploy
