@@ -49,4 +49,9 @@ jobs:
       # Deploy Static files!
       - run:
           name: yarn deploy
-          command: yarn deploy
+          command: |
+            echo ${GITHUB_TOKEN}
+            ls -al
+            git remote rm origin
+            git remote add origin https://sidthekid134:${GITHUB_TOKEN}@github.com/sidthekid134/aurum-fx.git
+            yarn deploy
