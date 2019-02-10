@@ -35,3 +35,9 @@ jobs:
 
       # run tests!
       - run: yarn test
+
+      # Build Static files!
+      - run: yarn predeploy
+
+      # Deploy Static files!
+      - run: yarn deploy
