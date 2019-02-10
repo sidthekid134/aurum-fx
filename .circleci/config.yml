@@ -27,26 +27,26 @@ jobs:
           - v1-dependencies-
 
       - run:
-          name: Installing Dependencies
-          command: yarn install
+        name: Installing Dependencies
+        command: yarn install
 
       - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+        paths:
+          - node_modules
+        key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
       - run:
-          name: Test Build
-          command: yarn test
+        name: Test Build
+        command: yarn test
 
       - run:
-          name: Setup Git
-          command: |
-            git config --global user.email "octarine-bot@octarinegroup.com"
-            git config --global user.name "OctarineBot"
+        name: Setup Git
+        command: |
+          git config --global user.email "octarine-bot@octarinegroup.com"
+          git config --global user.name "OctarineBot"
 
       # Deploy Static files!
       - run:
-          name: yarn deploy
-          command: yarn deploy
+        name: yarn deploy
+        command: yarn deploy
